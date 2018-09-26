@@ -24,3 +24,5 @@ Route::get('fotos/{numero?}', function ($numero='Sin numero') {
 Route::get('cursos', function(){
    return view('inicio');
 });
+
+Route::resource('entrena', 'Entrenador');
